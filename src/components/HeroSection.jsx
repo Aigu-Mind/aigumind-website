@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Header from './Header'
 
 export default function HeroSection() {
   return (
@@ -12,13 +13,11 @@ export default function HeroSection() {
         }}
       />
       
-      {/* Header placeholder - will be called here later */}
-      <div className="relative z-20">
-        {/* Header component will go here */}
-      </div>
+      {/* Header - positioned absolutely over the gradient */}
+      <Header />
       
       {/* Main content area */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
+      <div className="relative z-10 flex items-center justify-center min-h-screen px-4 pt-24">
         <div className="text-center max-w-4xl mx-auto">
           {/* Content will go here later */}
         </div>
