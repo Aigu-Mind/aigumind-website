@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Sparkles } from "lucide-react"
 
 export default function OfferCard({ title, description, features, imageSrc, isImageOnLeft }) {
   return (
@@ -26,9 +26,9 @@ export default function OfferCard({ title, description, features, imageSrc, isIm
         <p className="text-base md:text-lg text-[#6E6E6E] mb-8 leading-relaxed">{description}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-8">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-start gap-2 text-gray-700">
-              <span className="text-blue-500 font-bold text-lg">+</span>
-              <p className="text-[#6E6E6E]">{feature}</p>
+            <div key={index} className="flex items-center gap-2 border border-gray-200 rounded-lg p-2 bg-white">
+              <Sparkles className="h-5 w-5 text-gradient-intelligence" />
+              <p className="text-[#6E6E6E]">{feature}</p> 
             </div>
           ))}
         </div>
