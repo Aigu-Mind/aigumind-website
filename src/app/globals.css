@@ -11,6 +11,12 @@
   .bg-gradient-radial {
     background: radial-gradient(ellipse at center, var(--tw-gradient-stops));
   }
+  .text-gradient-intelligence {
+    background: linear-gradient(90deg, #BC91F6 0%, #5087ED 50%, #4795E4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 @layer base {
