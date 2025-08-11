@@ -1,28 +1,69 @@
-import React from 'react'
-import Image from 'next/image'
-import Header from './Header'
+import Image from "next/image"
+import Header from "./Header"
+import Button from "./Button"
 
 export default function HeroSection() {
+  const clientLogos = [
+    "/images/c1.png",
+    "/images/c2.png",
+    "/images/c3.png",
+    "/images/c4.png",
+    "/images/c5.png",
+    "/images/c6.png",
+    "/images/c7.png",
+  ]
+
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Radial Gradient Background */}
-      <div 
+      <div
         className="absolute inset-0 bg-gradient-radial from-[#122941] to-[#060D14]"
         style={{
-          background: 'radial-gradient(ellipse at center, #122941 0%, #060D14 100%)'
+          background: "radial-gradient(ellipse at center, #122941 0%, #060D14 100%)",
         }}
       />
-      
       {/* Header - positioned absolutely over the gradient */}
-      <Header />
-      
+      <Header /> 
       {/* Main content area */}
-      <div className="relative z-10 flex items-center justify-center min-h-screen px-4 pt-24">
-        <div className="text-center max-w-4xl mx-auto">
-          {/* Content will go here later */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 pt-24 pb-16 text-center">
+        <div className="max-w-4xl mx-auto">
+          {/* Heading */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+            Plugging <span className="text-gradient-intelligence">Intelligence</span> Into Your Business
+          </h1>
+
+          {/* Description */}
+          <p className="text-[#C4C4C4] text-lg md:text-xl mb-10 max-w-2xl mx-auto text-balance">
+            Empower your business with AI bots, intelligent automation, and scalable digital infrastructure. From
+            eCommerce to enterprise tools — we design systems that think, adapt, and grow with you.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <Button variant="primary" size="lg">
+              Talk to AI Expert
+            </Button>
+            <Button variant="secondary" size="lg">
+              View Services
+            </Button>
+          </div>
+
+          {/* Companies Section */}
+          <p className="text-[#C4C4C4] text-base mb-8">Trusted by 200+ Clients</p>
+          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 max-w-4xl mx-auto">
+            {clientLogos.map((logo, index) => (
+              <Image
+                key={index}
+                src={logo || "/placeholder.svg"}
+                alt={`Client Logo ${index + 1}`}
+                width={100}
+                height={40}
+                className="object-contain h-8 md:h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
+              />
+            ))}
+          </div>
         </div>
       </div>
-      
       {/* Polygon Images - Layered at bottom */}
       <div className="absolute bottom-0 left-0 right-0 z-5">
         {/* Polygon 1 - Largest, bottom layer */}
@@ -36,7 +77,7 @@ export default function HeroSection() {
             priority
           />
         </div>
-        
+
         {/* Polygon 2 - Middle layer */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10">
           <Image
@@ -48,20 +89,12 @@ export default function HeroSection() {
             priority
           />
         </div>
-        
+
         {/* Polygon 3 - Top layer, smallest */}
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20">
-          <Image
-            src="/images/polygon_3.png"
-            alt=""
-            width={600}
-            height={200}
-            className="object-contain"
-            priority
-          />
+          <Image src="/images/polygon_3.png" alt="" width={600} height={200} className="object-contain" priority />
         </div>
       </div>
-      
       {/* Subtle overlay for better text readability */}
       <div className="absolute inset-0 bg-black/10 z-5" />
     </section>

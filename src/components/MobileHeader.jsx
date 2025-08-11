@@ -1,17 +1,19 @@
-import React, { useState } from 'react'
-import Image from 'next/image'
-import Button from './Button'
+"use client"
+
+import { useState } from "react"
+import Image from "next/image"
+import Button from "./Button"
 
 export default function MobileHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  
+
   const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Contact', href: '#' }
+    { name: "Home", href: "#" },
+    { name: "About", href: "#" },
+    { name: "Services", href: "#" },
+    { name: "Contact", href: "#" },
   ]
-  
+
   return (
     <nav className="max-w-7xl mx-auto px-4 py-4">
       <div className="flex items-center justify-between">
@@ -26,7 +28,7 @@ export default function MobileHeader() {
             priority
           />
         </div>
-        
+
         {/* Mobile menu button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -42,15 +44,11 @@ export default function MobileHeader() {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            {isMenuOpen ? (
-              <path d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            )}
+            {isMenuOpen ? <path d="M6 18L18 6M6 6l12 12" /> : <path d="M4 6h16M4 12h16M4 18h16" />}
           </svg>
         </button>
       </div>
-      
+
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden mt-4 pb-4 border-t border-white/10">

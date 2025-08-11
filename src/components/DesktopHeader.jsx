@@ -1,15 +1,14 @@
-import React from 'react'
-import Image from 'next/image'
-import Button from './Button'
+import Image from "next/image"
+import Button from "./Button"
 
 export default function DesktopHeader() {
   const navItems = [
-    { name: 'Home', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Services', href: '#' },
-    { name: 'Contact', href: '#' }
+    { name: "Home", href: "#" },
+    { name: "About", href: "#" },
+    { name: "Services", href: "#" },
+    { name: "Contact", href: "#" },
   ]
-  
+
   return (
     <nav className="max-w-7xl mx-auto px-6 py-6">
       <div className="flex items-center justify-between">
@@ -24,7 +23,7 @@ export default function DesktopHeader() {
             priority
           />
         </div>
-        
+
         {/* Navigation Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item) => (
@@ -38,7 +37,7 @@ export default function DesktopHeader() {
             </a>
           ))}
         </div>
-        
+
         {/* CTA Button */}
         <div className="hidden md:flex">
           <Button variant="primary" size="md">
