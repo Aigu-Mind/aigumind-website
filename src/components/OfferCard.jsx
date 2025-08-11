@@ -23,12 +23,12 @@ export default function OfferCard({ title, description, features, imageSrc, isIm
       {/* Content Section */}
       <div className="w-full md:w-1/2 text-center md:text-left">
         <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 leading-tight">{title}</h3>
-        <p className="text-base md:text-lg text-gray-600 mb-8 leading-relaxed">{description}</p>
+        <p className="text-base md:text-lg text-[#6E6E6E] mb-8 leading-relaxed">{description}</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-8">
           {features.map((feature, index) => (
             <div key={index} className="flex items-start gap-2 text-gray-700">
               <span className="text-blue-500 font-bold text-lg">+</span>
-              <p className="text-base">{feature}</p>
+              <p className="text-[#6E6E6E]">{feature}</p>
             </div>
           ))}
         </div>
