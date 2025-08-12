@@ -59,10 +59,10 @@ export default function HeroSectionServiceDetail() {
             width={790}
             height={232}
             className="w-full rounded-2xl shadow-lg"
-            style={{
-              borderBottom: "4px solid #4285F4",
-              objectFit: "cover",
-            }}
+            // style={{
+            //   borderBottom: "4px solid #4285F4",
+            //   objectFit: "cover",
+            // }}
           />
         </div>
       </div>
