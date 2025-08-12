@@ -81,16 +81,34 @@ export default function LandingPage() {
 
       {/* Offerings Section */}
       <section className="bg-white">
-        {offers.map((offer, index) => (
-          <OfferCard
-            key={index}
-            title={offer.title}
-            description={offer.description}
-            features={offer.features}
-            imageSrc={offer.imageSrc}
-            isImageOnLeft={index % 2 == 0} // Alternates true/false for image on left
-          />
-        ))}
+        {offers.map((offer, index) => {
+          const isEvenIndex = (index + 1) % 2 === 0; 
+          
+          if (isEvenIndex) {
+            return (
+              <div key={index} className="w-full bg-[#F3F7FF63]">
+                <OfferCard
+                  title={offer.title}
+                  description={offer.description}
+                  features={offer.features}
+                  imageSrc={offer.imageSrc}
+                  isImageOnLeft={index % 2 == 0}
+                />
+              </div>
+            );
+          } else {
+            return (
+              <OfferCard
+                key={index}
+                title={offer.title}
+                description={offer.description}
+                features={offer.features}
+                imageSrc={offer.imageSrc}
+                isImageOnLeft={index % 2 == 0}
+              />
+            );
+          }
+        })}
       </section>
       <WhyChooseUs/>
       <OurClients/>
