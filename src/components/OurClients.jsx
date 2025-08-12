@@ -82,11 +82,11 @@ export default function OurClients() {
         </div>
         {/* Navigation buttons group */}
         <div className="flex justify-center">
-          <div className="inline-flex items-center gap-4 border-dotted border-[#4B6A88] rounded-full px-8 py-4 bg-white">
+          <div className="inline-flex items-center gap-4 border-dotted border-[#4B6A88] rounded-full px-4 py-2 bg-white">
             {/* Left arrow button */}
             <button
               onClick={prev}
-              className="w-10 h-8 flex items-center justify-center rounded-full bg-transparent cursor-pointer hover:bg-gray-100 transition-colors duration-200"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-transparent cursor-pointer hover:bg-gray-100 transition-colors duration-200"
               aria-label="Previous"
             >
               <span className="text-blue-500 text-xl">&#8592;</span>
@@ -94,7 +94,7 @@ export default function OurClients() {
             {/* Right arrow button */}
             <button
               onClick={next}
-              className="w-10 h-8 flex items-center justify-center rounded-full bg-[#4285F4] shadow text-white cursor-pointer hover:bg-blue-600 transition-colors duration-200"
+              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#4285F4] shadow text-white cursor-pointer hover:bg-blue-600 transition-colors duration-200"
               aria-label="Next"
             >
               <span className="text-xl">&#8594;</span>

@@ -3,7 +3,7 @@ import React from "react";
 const TestimonialCard = ({ testimonial, isActive, className = "" }) => {
   return (
     <div 
-      className={`bg-white rounded-xl p-6 w-80 shadow transition-all duration-500 ease-in-out ${
+      className={`bg-white rounded-xl p-6 w-80 min-h-[200px] shadow transition-all duration-500 ease-in-out ${
         isActive 
           ? "opacity-100 shadow-lg scale-100" 
           : "opacity-40 shadow scale-95"
