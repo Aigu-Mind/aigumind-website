@@ -1,16 +1,17 @@
 "use client"
 import React, { useState, useEffect } from "react";
+import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
   {
     stars: 5,
-    text: "Certainty say suffering his him collected intention promotion. Hill sold ham men made lose case. Views abode law heard jokes too.",
+    text: "Abcssdufsdijsd ifhsilsd joji asdjio asciajck as. Hill sold ham men made lose case. Views abode law heard jokes too.",
     name: "Chris Evans",
     location: "Client from USA",
   },
   {
     stars: 5,
-    text: "Certainty say suffering his him collected intention promotion. Hill sold ham men made lose case. Views abode law heard jokes too.",
+    text: "Hill sold ham men made lose case. Views abode law heard jokes too.",
     name: "Andrew Chris",
     location: "Client from Uganda",
   },
@@ -24,17 +25,37 @@ const testimonials = [
 
 export default function OurClients() {
   const [active, setActive] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const prev = () => setActive((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-  const next = () => setActive((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+  const prev = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setActive((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
+    setTimeout(() => setIsTransitioning(false), 500);
+  };
+
+  const next = () => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setActive((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+    setTimeout(() => setIsTransitioning(false), 500);
+  };
 
   // Auto-slide effect
   useEffect(() => {
     const interval = setInterval(() => {
-      setActive((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+      if (!isTransitioning) {
+        setIsTransitioning(true);
+        setActive((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
+        setTimeout(() => setIsTransitioning(false), 500);
+      }
     }, 3500); // Change slide every 3.5 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [isTransitioning]);
+
+  const getTestimonialIndex = (offset) => {
+    return (active + offset + testimonials.length) % testimonials.length;
+  };
 
   return (
     <section className="bg-[#F8FAFF] py-16 px-4">
@@ -44,46 +65,28 @@ export default function OurClients() {
         </h2>
         <div className="flex justify-center items-center gap-6 mb-12">
           {/* Left faded card */}
-          <div className="bg-white rounded-xl p-6 w-80 opacity-40 shadow transition">
-            <div className="text-blue-400 mb-2">{"★".repeat(testimonials[(active + testimonials.length - 1) % testimonials.length].stars)}</div>
-            <p className="text-gray-600 text-sm mb-4">
-              {testimonials[(active + testimonials.length - 1) % testimonials.length].text}
-            </p>
-            <div className="text-gray-500 text-xs">
-              {testimonials[(active + testimonials.length - 1) % testimonials.length].name}<br />
-              {testimonials[(active + testimonials.length - 1) % testimonials.length].location}
-            </div>
-          </div>
+          <TestimonialCard 
+            testimonial={testimonials[getTestimonialIndex(-1)]}
+            isActive={false}
+          />
           {/* Center active card */}
-          <div className="bg-white rounded-xl p-6 w-80 shadow-lg transition">
-            <div className="text-blue-500 mb-2">{"★".repeat(testimonials[active].stars)}</div>
-            <p className="text-gray-700 text-sm mb-4">
-              {testimonials[active].text}
-            </p>
-            <div className="text-gray-700 text-xs font-semibold">
-              {testimonials[active].name}<br />
-              <span className="font-normal">{testimonials[active].location}</span>
-            </div>
-          </div>
+          <TestimonialCard 
+            testimonial={testimonials[active]}
+            isActive={true}
+          />
           {/* Right faded card */}
-          <div className="bg-white rounded-xl p-6 w-80 opacity-40 shadow transition">
-            <div className="text-blue-400 mb-2">{"★".repeat(testimonials[(active + 1) % testimonials.length].stars)}</div>
-            <p className="text-gray-600 text-sm mb-4">
-              {testimonials[(active + 1) % testimonials.length].text}
-            </p>
-            <div className="text-gray-500 text-xs">
-              {testimonials[(active + 1) % testimonials.length].name}<br />
-              {testimonials[(active + 1) % testimonials.length].location}
-            </div>
-          </div>
+          <TestimonialCard 
+            testimonial={testimonials[getTestimonialIndex(1)]}
+            isActive={false}
+          />
         </div>
         {/* Navigation buttons group */}
         <div className="flex justify-center">
-          <div className="inline-flex items-center gap-4 border-dotted border-[#4B6A88] rounded-xl px-6 py-3 bg-white">
+          <div className="inline-flex items-center gap-4 border-dotted border-[#4B6A88] rounded-full px-8 py-4 bg-white">
             {/* Left arrow button */}
             <button
               onClick={prev}
-              className="w-8 h-8 flex items-center justify-center rounded-full bg-transparent cursor-pointer"
+              className="w-10 h-8 flex items-center justify-center rounded-full bg-transparent cursor-pointer hover:bg-gray-100 transition-colors duration-200"
               aria-label="Previous"
             >
               <span className="text-blue-500 text-xl">&#8592;</span>
@@ -91,7 +94,7 @@ export default function OurClients() {
             {/* Right arrow button */}
             <button
               onClick={next}
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#4285F4] shadow text-white cursor-pointer"
+              className="w-10 h-8 flex items-center justify-center rounded-full bg-[#4285F4] shadow text-white cursor-pointer hover:bg-blue-600 transition-colors duration-200"
               aria-label="Next"
             >
               <span className="text-xl">&#8594;</span>
