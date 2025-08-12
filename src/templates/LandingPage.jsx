@@ -1,5 +1,8 @@
+import WhyChooseUs from "@/components/WhyChooseUs"
 import HeroSection from "../components/HeroSection"
 import OfferCard from "../components/OfferCard"
+import OurClients from "@/components/OurClients"
+import Footer from "@/components/Footer"
 
 export default function LandingPage() {
   const offers = [
@@ -89,6 +92,9 @@ export default function LandingPage() {
           />
         ))}
       </section>
+      <WhyChooseUs/>
+      <OurClients/>
+      <Footer/>
     </div>
   )
 }
