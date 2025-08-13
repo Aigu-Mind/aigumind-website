@@ -21,7 +21,7 @@ export default function HeroSectionServiceDetail() {
             <div className="text-[#8B8DF7] text-base font-medium mb-2 mt-8 font-[Satoshi]">
               Services / Digital Commerce Solutions
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight font-[Satoshi-Bold]">
+            <h1 className="text-5xl md:text-4xl font-bold text-white mb-6 leading-tight font-[Satoshi-Bold]">
               Elevate Your Digital
               <br />
               Commerce with End-to-End
@@ -35,12 +35,8 @@ export default function HeroSectionServiceDetail() {
             Transform your online store into a high-performing sales engine with our Digital Commerce Solutions. We go
             beyond basic platform customization to deliver comprehensive revenue optimization tailored for high-growth
             businesses.
-            <br />
-            <br />
             Leveraging our deep expertise in Shopify, WooCommerce, and BigCommerce, we provide end-to-end commerce
             transformation—from checkout optimization and conversion enhancement to scalable merchant solutions.
-            <br />
-            <br />
             Whether you're looking to streamline operations, maximize conversions, or future-proof your eCommerce
             strategy, our solutions are designed to drive sustainable growth and superior customer experiences. Partner
             with us to unlock the full potential of your digital storefront.
