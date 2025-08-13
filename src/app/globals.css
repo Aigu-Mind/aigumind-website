@@ -17,6 +17,41 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
+  
+  /* HeroSectionServiceDetail specific styles */
+  .breadcrumb-style {
+    font-family: Satoshi;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 1%;
+    background: linear-gradient(199.69deg, #BC91F6 17.12%, #5087ED 53.56%, #4795E4 114.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .heading-style {
+    font-family: Satoshi;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: 1%;
+  }
+  
+  .right-text-style {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 170%;
+    letter-spacing: 1%;
+    color: #C4C4C4;
+    align-self: flex-end;
+    margin-bottom: 10px;
+  }
 }
 
 @layer base {

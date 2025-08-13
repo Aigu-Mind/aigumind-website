@@ -18,34 +18,10 @@ export default function HeroSectionServiceDetail() {
         <div className="relative z-10 max-w-7xl mx-auto pt-32 px-6 flex flex-col md:flex-row gap-12 pb-8">
           {/* Left Side */}
           <div className="flex-1">
-            <div 
-              className="mb-2 mt-8"
-              style={{
-                fontFamily: 'Satoshi',
-                fontWeight: 700,
-                fontStyle: 'normal',
-                fontSize: '24px',
-                lineHeight: '150%',
-                letterSpacing: '1%',
-                background: 'linear-gradient(199.69deg, #BC91F6 17.12%, #5087ED 53.56%, #4795E4 114.78%)',
-                WebkitBackgroundClip: 'text',
-                WebkitTextFillColor: 'transparent',
-                backgroundClip: 'text'
-              }}
-            >
+            <div className="breadcrumb-style mb-2 mt-8">
               Services / Digital Commerce Solutions
             </div>
-            <h1 
-              className="text-white mb-6 leading-tight"
-              style={{
-                fontFamily: 'Satoshi',
-                fontWeight: 700,
-                fontStyle: 'normal',
-                fontSize: '40px',
-                lineHeight: '150%',
-                letterSpacing: '1%'
-              }}
-            >
+            <h1 className="heading-style text-white mb-6 leading-tight">
               Elevate Your Digital
               <br />
               Commerce with End-to-End
@@ -55,20 +31,7 @@ export default function HeroSectionServiceDetail() {
             <Button>Talk to AI Expert</Button>
           </div>
           {/* Right Side */}
-          <div 
-            className="flex-1 leading-relaxed"
-            style={{
-              fontFamily: 'Satoshi',
-              fontWeight: 400,
-              fontStyle: 'normal',
-              fontSize: '16px',
-              lineHeight: '170%',
-              letterSpacing: '1%',
-              color: '#C4C4C4',
-              alignSelf: 'flex-end',
-              marginBottom: '10px'
-            }}
-          >
+          <div className="right-text-style flex-1 leading-relaxed">
             Transform your online store into a high-performing sales engine with our Digital Commerce Solutions. We go
             beyond basic platform customization to deliver comprehensive revenue optimization tailored for high-growth
             businesses.
