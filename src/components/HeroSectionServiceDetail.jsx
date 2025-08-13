@@ -21,7 +21,7 @@ export default function HeroSectionServiceDetail() {
             <div className="text-[#8B8DF7] text-base font-medium mb-2 mt-8 font-[Satoshi]">
               Services / Digital Commerce Solutions
             </div>
-            <h1 className="text-5xl md:text-4xl font-bold text-white mb-6 leading-tight font-[Satoshi-Bold]">
+            <h1 className="text-[40px] font-bold text-white mb-6 leading-tight font-[Satoshi-Bold]">
               Elevate Your Digital
               <br />
               Commerce with End-to-End
