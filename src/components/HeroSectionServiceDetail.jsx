@@ -31,7 +31,7 @@ export default function HeroSectionServiceDetail() {
             <Button>Talk to AI Expert</Button>
           </div>
           {/* Right Side */}
-          <div className="flex-1 text-gray-300 text-sm md:text-base leading-relaxed mb-2 mt-8 font-[Satoshi]">
+          <div className="flex-1 text-gray-300 text-sm md:text-base leading-relaxed mt-10 font-[Satoshi]">
             Transform your online store into a high-performing sales engine with our Digital Commerce Solutions. We go
             beyond basic platform customization to deliver comprehensive revenue optimization tailored for high-growth
             businesses.
