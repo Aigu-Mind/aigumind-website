@@ -52,6 +52,101 @@
     align-self: flex-end;
     margin-bottom: 10px;
   }
+
+  /* Custom breakpoints for specific screen sizes */
+  @media (min-width: 1280px) and (max-width: 1919px) {
+    .laptop\:min-h-\[80vh\] {
+      min-height: 80vh;
+    }
+    .laptop\:pt-24 {
+      padding-top: 6rem;
+    }
+    .laptop\:px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .laptop\:flex-col {
+      flex-direction: column;
+    }
+    .laptop\:gap-8 {
+      gap: 2rem;
+    }
+    .laptop\:pb-6 {
+      padding-bottom: 1.5rem;
+    }
+    .laptop\:mt-6 {
+      margin-top: 1.5rem;
+    }
+    .laptop\:text-xl {
+      font-size: 1.25rem;
+    }
+    .laptop\:mb-4 {
+      margin-bottom: 1rem;
+    }
+    .laptop\:text-3xl {
+      font-size: 1.875rem;
+    }
+    .laptop\:text-sm {
+      font-size: 0.875rem;
+    }
+    .laptop\:-mt-16 {
+      margin-top: -4rem;
+    }
+    .laptop\:px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .laptop\:rounded-xl {
+      border-radius: 0.75rem;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .desktop\:min-h-\[85vh\] {
+      min-height: 85vh;
+    }
+    .desktop\:pt-32 {
+      padding-top: 8rem;
+    }
+    .desktop\:px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .desktop\:flex-row {
+      flex-direction: row;
+    }
+    .desktop\:gap-12 {
+      gap: 3rem;
+    }
+    .desktop\:pb-8 {
+      padding-bottom: 2rem;
+    }
+    .desktop\:mt-8 {
+      margin-top: 2rem;
+    }
+    .desktop\:text-2xl {
+      font-size: 1.5rem;
+    }
+    .desktop\:mb-6 {
+      margin-bottom: 1.5rem;
+    }
+    .desktop\:text-4xl {
+      font-size: 2.25rem;
+    }
+    .desktop\:text-base {
+      font-size: 1rem;
+    }
+    .desktop\:-mt-75 {
+      margin-top: -18.75rem;
+    }
+    .desktop\:px-6 {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .desktop\:rounded-2xl {
+      border-radius: 1rem;
+    }
+  }
 }
 
 @layer base {
