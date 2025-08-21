@@ -31,14 +31,10 @@ export default function HeroSectionServiceDetail() {
                     </div>
                     {/* Right Side */}
                     <div className="right-text-style flex-1 leading-relaxed laptop:text-sm md:text-sm sm:text-xs">
-                        Transform your business with our comprehensive Enterprise Application Development
-                        solutions, designed to deliver scalable, secure, and high-performance applications tailored to your needs. 
-                        Our expertise spans Custom Software Development, where we build bespoke business applications, internal tools, 
-                        and client-facing platforms using cutting-edge technologies like React, Next.js, and Node.js. We also provide 
-                        Cloud Infrastructure Services, ensuring seamless deployment and management on AWS and Google Cloud, along with 
-                        serverless architecture design and database optimization for peak efficiency. Additionally, our 
-                        Security and Performance Engineering focus guarantees robust system hardening, compliance adherence, and optimized performance 
-                        to meet critical enterprise demands. Partner with us to elevate your digital infrastructure with reliability, innovation, and precision.
+                        Transform your business with our comprehensive Enterprise Application Development solutions, designed to deliver scalable, secure, and high-performance applications tailored to your needs. Our expertise spans Custom Software
+                        Development, where we build bespoke business applications, internal tools, and client-facing platforms using cutting-edge technologies like React, Next.js, and Node.js. We also provide Cloud Infrastructure Services, ensuring seamless deployment and management on AWS and Google Cloud, along with serverless architecture design and database optimization for peak efficiency. 
+                        Additionally, our Security and Performance Engineering focus guarantees robust system hardening, compliance adherence, and optimized performance to meet critical enterprise demands. 
+                        Partner with us to elevate your digital infrastructure with reliability, innovation, and precision.
                     </div>
                 </div>
             </section>

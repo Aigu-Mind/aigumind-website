@@ -31,13 +31,10 @@ export default function HeroSectionServiceDetail() {
                     </div>
                     {/* Right Side */}
                     <div className="right-text-style flex-1 leading-relaxed laptop:text-sm md:text-sm sm:text-xs">
-                        Transform your business with our cutting-edge Intelligent Process Automation solutions, 
-                        designed to enhance efficiency, reduce costs, and drive innovation. Our expertise spans 
-                        three key areas: Conversational AI Solutions, where we develop custom chatbots, knowledge management systems, 
-                        and automated customer service platforms using advanced RAG and LLM technologies. With Workflow Automation 
-                        Services, we optimize business processes by leveraging powerful platforms like n8n and Make.com to eliminate manual 
-                        tasks and boost operational productivity. Additionally, our AI Integration and Strategy services ensure seamless adoption 
-                        of artificial intelligence within your existing systems, including AI-powered decision support tools for smarter business outcomes. 
+                        Transform your business with our cutting-edge Intelligent Process Automation solutions, designed to enhance efficiency, reduce costs, and drive innovation. 
+                        Our expertise spans three key areas: Conversational AI Solutions, where we develop custom chatbots, knowledge management systems, and automated customer service platforms using advanced RAG and LLM technologies. 
+                        With Workflow Automation Services, we optimize business processes by leveraging powerful platforms like n8n and Make.com to eliminate manual tasks and boost operational productivity. 
+                        Additionally, our AI Integration and Strategy services ensure seamless adoption of artificial intelligence within your existing systems, including AI-powered decision support tools for smarter business outcomes. 
                         Let us help you harness the power of automation and AI to stay ahead in a competitive landscape.
 
                     </div>

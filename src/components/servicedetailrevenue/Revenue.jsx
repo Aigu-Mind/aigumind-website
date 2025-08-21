@@ -9,37 +9,24 @@ export default function Intelligent() {
                     {/* Left Block */}
                     <div>
                         <h2 className="text-2xl font-semibold mb-4 font-[satoshi]">
-                            Brand Identity and Visual Design
+                            Analytics and Tracking Implementation
                         </h2>
                         <div className="mb-3 font-[satoshi]">
                             <span className="font-bold">Strategic Overview</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                We create tailored business applications that streamline
-                                operations, enhance productivity, and provide competitive
-                                advantages through technology. Our custom development services
-                                address unique business requirements that off-the-shelf
-                                solutions cannot meet, delivering measurable improvements in
-                                efficiency and user experience.
+                                We establish comprehensive measurement frameworks that provide accurate, actionable insights into customer behavior and marketing performance. Our analytics implementations enable data-driven decision making, optimize marketing spend efficiency, and demonstrate clear ROI across all digital initiatives.
                             </p>
                         </div>
                         <div className="mb-3">
                             <span className="font-bold">Core Capabilities</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Full-stack web application development using React and Next.js;
-                                API development and third-party system integrations; user
-                                interface design optimized for business workflows; database
-                                architecture and optimization for performance at scale.
+                                Google Analytics 4 configuration with custom event tracking and conversion funnels; server-side tracking implementation for privacy-compliant data collection; Google Tag Manager setup with advanced trigger configurations; cross-platform attribution modeling connecting online and offline customer touchpoints.
                             </p>
                         </div>
                         <div>
                             <span className="font-bold">Delivery Approach</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Development follows agile methodology with regular stakeholder
-                                reviews and iterative feedback cycles. We provide comprehensive
-                                testing including security audits, user acceptance testing
-                                phases, and detailed documentation. Post-launch support includes
-                                monitoring, maintenance, and feature enhancement based on user
-                                feedback.
+                                Our implementation process begins with data strategy consultation and measurement planning aligned to business objectives. We conduct thorough testing phases to ensure data accuracy, provide comprehensive dashboard creation, and include team training sessions with ongoing support for data interpretation and optimization.
                             </p>
                         </div>
                     </div>
@@ -70,30 +57,24 @@ export default function Intelligent() {
                     {/* Right Block */}
                     <div>
                         <h2 className="text-2xl font-semibold mb-4 font-[satoshi]">
-                            Brand Identity and Visual Design
+                            CRM and Customer Journey Optimization
                         </h2>
                         <div className="mb-3 font-[satoshi]">
                             <span className="font-bold">Strategic Overview</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                We create tailored business applications that streamline operations, enhance productivity, and provide competitive advantages through technology.
-                                Our custom development services address unique business requirements that off-the-shelf solutions cannot meet, delivering measurable improvements in efficiency
-                                and user experience.
+                                We design and implement customer relationship management systems that create seamless, personalized customer experiences throughout the entire lifecycle. Our optimization services increase customer lifetime value, improve retention rates, and enable predictive customer behavior analysis for proactive engagement strategies.
                             </p>
                         </div>
                         <div className="mb-3">
                             <span className="font-bold">Core Capabilities</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Full-stack web application development using React and Next.js; API development and
-                                third-party system integrations; user interface design optimized for business workflows; database architecture
-                                and optimization for performance at scale.
+                                HubSpot, Zoho, and SugarCRM implementation with custom workflow automation; Customer.io journey mapping and personalization campaigns; lead scoring and qualification automation; customer segmentation and behavioral trigger systems; cross-platform data synchronization and reporting.
                             </p>
                         </div>
                         <div>
                             <span className="font-bold">Delivery Approach</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Development follows agile methodology with regular stakeholder reviews and iterative feedback cycles.
-                                We provide comprehensive testing including security audits, user acceptance testing phases, and detailed documentation.
-                                Post-launch support includes monitoring, maintenance, and feature enhancement based on user feedback.
+                                Implementation begins with customer journey mapping and data architecture planning. We configure systems with comprehensive testing phases, provide team training and adoption support, and include ongoing optimization based on customer engagement analytics and conversion performance metrics.
                             </p>
                         </div>
                     </div>
@@ -103,26 +84,23 @@ export default function Intelligent() {
                     {/* Left Block */}
                     <div>
                         <h2 className="text-2xl font-semibold mb-4 font-[satoshi]">
-                            User Experience and Interface Design
+                            Revenue Operations Consulting
                         </h2>
                         <div className="mb-3 font-[satoshi]">
                             <span className="font-bold">Strategic Overview</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                We architect and implement scalable ecommerce platforms that support rapid business growth while maintaining exceptional customer experiences.
-                                Our platform engineering services enable businesses to handle increased transaction volumes, expand into new markets, and adapt quickly to changing customer expectations.
+                                We align marketing, sales, and customer success operations through unified technology platforms and optimized processes that accelerate revenue growth. Our consulting services eliminate operational silos, improve forecast accuracy, and create scalable revenue generation systems that support sustainable business expansion.
                             </p>
                         </div>
                         <div className="mb-3">
                             <span className="font-bold">Core Capabilities</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Custom theme development optimized for conversion and performance; advanced platform integrations connecting inventory, CRM, and fulfillment systems; seamless migrations between platforms with zero downtime; mobile-first responsive design ensuring optimal experiences across all devices.
-                            </p>
+                                Revenue technology stack audit and optimization recommendations; sales and marketing alignment process design; forecasting and pipeline management system implementation; customer success automation and retention strategy development; revenue attribution modeling and performance analytics.                            </p>
                         </div>
                         <div>
                             <span className="font-bold">Delivery Approach</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Our platform engineering follows a phased implementation methodology beginning with comprehensive discovery and technical architecture planning. We provide staging environments for thorough testing, conduct performance optimization before launch, and include post-launch monitoring and support to ensure continued optimal performance.
-                            </p>
+                                Consulting engagement starts with comprehensive revenue operations assessment and stakeholder interviews. We design integrated workflows with cross-departmental approval, implement technology solutions with change management support, and provide ongoing performance monitoring with quarterly strategic reviews.                            </p>
                         </div>
                     </div>
                     {/* Right Image Block */}

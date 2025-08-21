@@ -14,20 +14,17 @@ export default function Intelligent() {
                         <div className="mb-3 font-[satoshi]">
                             <span className="font-bold">Strategic Overview</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                We create tailored business applications that streamline operations, enhance productivity, and provide competitive advantages through technology. Our custom development services address unique business requirements that off-the-shelf solutions cannot meet, delivering measurable improvements in efficiency and user experience.
-                            </p>
+                                We provide systematic market intelligence gathering that informs strategic decision making and competitive positioning. Our automated research solutions deliver timely insights on competitor activities, market trends, and industry developments, enabling proactive business strategies.                            </p>
                         </div>
                         <div className="mb-3">
                             <span className="font-bold">Core Capabilities</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Full-stack web application development using React and Next.js; API development and third-party system integrations; user interface design optimized for business workflows; database architecture and optimization for performance at scale.
-                            </p>
+                                Automated competitor monitoring across pricing, product launches, and marketing campaigns; market research data collection from industry sources and B2B platforms; custom reporting dashboards with trend analysis and actionable insights; data validation and quality assurance protocols.                            </p>
                         </div>
                         <div>
                             <span className="font-bold">Delivery Approach</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Development follows agile methodology with regular stakeholder reviews and iterative feedback cycles. We provide comprehensive testing including security audits, user acceptance testing phases, and detailed documentation. Post-launch support includes monitoring, maintenance, and feature enhancement based on user feedback
-                            </p>
+                                Projects begin with intelligence requirements gathering and data source identification. We implement automated collection systems with quality controls, provide customized reporting formats, and include regular strategy sessions to interpret findings and recommend actions.                            </p>
                         </div>
                     </div>
                     {/* Right Image Block */}
@@ -62,20 +59,17 @@ export default function Intelligent() {
                         <div className="mb-3 font-[satoshi]">
                             <span className="font-bold">Strategic Overview</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                We architect and implement scalable ecommerce platforms that support rapid business growth while maintaining exceptional customer experiences. Our platform engineering services enable businesses to handle increased transaction volumes, expand into new markets, and adapt quickly to changing customer expectations.
-                            </p>
+                                We extract valuable business intelligence from complex digital sources including member portals, B2B platforms, and proprietary systems that contain critical market information. Our extraction services provide access to otherwise unavailable data that informs strategic decisions and competitive positioning.                            </p>
                         </div>
                         <div className="mb-3">
                             <span className="font-bold">Core Capabilities</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Custom theme development optimized for conversion and performance; advanced platform integrations connecting inventory, CRM, and fulfillment systems; seamless migrations between platforms with zero downtime; mobile-first responsive design ensuring optimal experiences across all devices.
-                            </p>
+                                Member area and B2B portal data extraction with authentication handling; ETA status monitoring and supply chain visibility solutions; product catalog and pricing intelligence gathering; regulatory and compliance data collection; custom extraction solutions for proprietary platforms.                            </p>
                         </div>
                         <div>
                             <span className="font-bold">Delivery Approach</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Our platform engineering follows a phased implementation methodology beginning with comprehensive discovery and technical architecture planning. We provide staging environments for thorough testing, conduct performance optimization before launch, and include post-launch monitoring and support to ensure continued optimal performance
-                            </p>
+                                Projects begin with data source analysis and extraction feasibility assessment. We develop custom extraction protocols with error handling and validation, provide structured data delivery in preferred formats, and include ongoing monitoring with data quality assurance and update notifications.                            </p>
                         </div>
                     </div>
                 </div>
@@ -89,20 +83,17 @@ export default function Intelligent() {
                         <div className="mb-3 font-[satoshi]">
                             <span className="font-bold">Strategic Overview</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                We architect and implement scalable ecommerce platforms that support rapid business growth while maintaining exceptional customer experiences. Our platform engineering services enable businesses to handle increased transaction volumes, expand into new markets, and adapt quickly to changing customer expectations
-                            </p>
+                                We create unified data ecosystems that connect disparate business systems and transform raw information into actionable business intelligence. Our pipeline management services ensure reliable, accurate data flow that supports real-time decision making and strategic planning across all organizational levels.                            </p>
                         </div>
                         <div className="mb-3">
                             <span className="font-bold">Core Capabilities</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Custom theme development optimized for conversion and performance; advanced platform integrations connecting inventory, CRM, and fulfillment systems; seamless migrations between platforms with zero downtime; mobile-first responsive design ensuring optimal experiences across all devices
-                            </p>
+                                Multi-source data integration with transformation and cleansing protocols; automated pipeline monitoring with error detection and recovery; real-time and batch processing solutions; data warehouse and lake architecture design; API development for seamless system connectivity.                            </p>
                         </div>
                         <div>
                             <span className="font-bold">Delivery Approach</span>
                             <p className="text-gray-700 text-sm mt-1">
-                                Our platform engineering follows a phased implementation methodology beginning with comprehensive discovery and technical architecture planning. We provide staging environments for thorough testing, conduct performance optimization before launch, and include post-launch monitoring and support to ensure continued optimal performance
-                            </p>
+                                Pipeline development starts with comprehensive data mapping and architecture design. We implement integration solutions with thorough testing and validation phases, provide monitoring dashboards with alerting systems, and include ongoing maintenance with performance optimization and scalability planning.                            </p>
                         </div>
                     </div>
                     {/* Right Image Block */}

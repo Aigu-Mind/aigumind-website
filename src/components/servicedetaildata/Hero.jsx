@@ -31,10 +31,10 @@ export default function HeroSectionServiceDetail() {
                     </div>
                     {/* Right Side */}
                     <div className="right-text-style flex-1 leading-relaxed laptop:text-sm md:text-sm sm:text-xs">
-                        Our Strategic Data Intelligence practice empowers businesses with actionable insights through three key service offerings.
-                        Competitive Intelligence Automation delivers systematic market research, competitor monitoring, and industry trend analysis using advanced automated data collection.
-                        Business Data Extraction tackles the technical complexities of sourcing information from member-only areas, B2B portals, and specialized industry platforms. Finally,
-                        Data Integration and Pipeline Management ensures seamless data cleaning, structuring, and delivery in formats optimized for strategic decision-making. Together, these
+                        Our Strategic Data Intelligence practice empowers businesses with actionable insights through three key service offerings.
+                        Competitive Intelligence Automation delivers systematic market research, competitor monitoring, and industry trend analysis using advanced automated data collection.
+                        Business Data Extraction tackles the technical complexities of sourcing information from member-only areas, B2B portals, and specialized industry platforms. Finally,
+                        Data Integration and Pipeline Management ensures seamless data cleaning, structuring, and delivery in formats optimized for strategic decision-making. Together, these
                         services provide a robust foundation for informed business planning and sustained competitive advantage.
 
                     </div>

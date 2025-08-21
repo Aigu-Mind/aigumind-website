@@ -19,24 +19,19 @@ export default function HeroSectionServiceDetail() {
                     {/* Left Side */}
                     <div className="flex-1">
                         <div className="breadcrumb-style mb-2 mt-8 laptop:mt-6 md:mt-4 sm:mt-3 laptop:text-xl md:text-lg sm:text-base">
-                            Services / Creative Design and Brand Solutions            </div>
+                            Services / Revenue Technology Integration            </div>
                         <h1 className="heading-style text-white mb-6 laptop:mb-4 md:mb-3 sm:mb-2 leading-tight laptop:text-3xl md:text-2xl sm:text-xl">
-                            Elevate Your Brand with
+                            Unify Your Marketing
                             <br className="laptop:block md:block sm:hidden" />
-                            Comprehensive Visual Design
+                            Technology for Measurable
                             <br className="laptop:block md:block sm:hidden" />
-                            and Digital Experiences
+                            Growth
                         </h1>
                         <Button>Talk to AI Expert</Button>
                     </div>
                     {/* Right Side */}
                     <div className="right-text-style flex-1 leading-relaxed laptop:text-sm md:text-sm sm:text-xs">
-                        Transform your brand's digital presence with our Creative Design and Brand Solutions that seamlessly blend aesthetic 
-                        excellence with strategic business objectives. We deliver end-to-end visual design services spanning brand identity, web design, 
-                        and digital marketing assets that drive engagement and conversions. Our expertise encompasses modern UI/UX design principles, responsive 
-                        web development, and comprehensive brand systems that ensure consistent visual communication across all touchpoints. Whether you're launching 
-                        a new brand, redesigning your digital presence, or scaling your visual content strategy, our solutions are crafted to enhance brand recognition, improve 
-                        user experiences, and support your business growth objectives.
+                        At We, we empower businesses with cutting-edge MarTech solutions through our three core service areas. Our Analytics and Tracking Implementation ensures precise data collection with expert setup of Google Analytics, Tag Manager, server-side tracking, and conversion measurement systems. Through CRM and Customer Journey Optimization, we leverage platforms like HubSpot, Zoho, and Customer.io to design seamless customer experiences and automated marketing workflows. Additionally, our Revenue Operations Consulting aligns marketing, sales, and customer success technologies to build integrated, high-performing revenue systems. Partner with us to transform your tech stack into a unified growth engine.
                     </div>
                 </div>
             </section>
