@@ -1,8 +1,5 @@
-import ServiceDetail from '@/templates/ServiceDetail'
-import React from 'react'
+import { redirect } from 'next/navigation'
 
-export default function page() {
-  return (
-    <ServiceDetail/>
-  )
+export default function Page() {
+  redirect('/service-details/digital-commerce')
 }
