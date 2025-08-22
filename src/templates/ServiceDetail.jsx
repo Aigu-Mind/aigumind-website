@@ -14,7 +14,7 @@ export default function ServiceDetail({ hero, rows }) {
         imageSrc={hero.imageSrc}
         imageAlt={hero.imageAlt}
       />
-      <section className="bg-white py-16 px-4">
+      <section className={`bg-white py-16 px-4 ${rows.length > 1 ? 'space-y-12' : ''}`}>
         {rows.map((row, index) => (
           <DetailRow
             key={index}
