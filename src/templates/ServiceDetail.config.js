@@ -61,7 +61,7 @@ export const serviceDetailBySlug = {
       },
     ],
   },
-  data: {
+  "strategic-data-intelligence": {
     hero: {
       breadcrumb: "Services / Strategic Data Intelligence",
       titleLines: [
@@ -146,7 +146,7 @@ export const serviceDetailBySlug = {
       },
     ],
   },
-  design: {
+  "creative-designs": {
     hero: {
       breadcrumb: "Services / Creative Design and Brand Solutions",
       titleLines: [
@@ -231,7 +231,7 @@ export const serviceDetailBySlug = {
       },
     ],
   },
-  enterprise: {
+  "enterprise-application-development": {
     hero: {
       breadcrumb: "Services /\tEnterprise Application Development",
       titleLines: [
@@ -280,7 +280,7 @@ export const serviceDetailBySlug = {
       },
     ],
   },
-  intelligent: {
+  "intelligent-process-automation": {
     hero: {
       breadcrumb: "Services /\tIntelligent Process Automation",
       titleLines: [
@@ -329,7 +329,7 @@ export const serviceDetailBySlug = {
       },
     ],
   },
-  revenue: {
+  "revenue-technology-integration": {
     hero: {
       breadcrumb: "Services / Revenue Technology Integration",
       titleLines: [
