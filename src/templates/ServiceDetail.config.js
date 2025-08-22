@@ -1,5 +1,5 @@
 export const serviceDetailBySlug = {
-  "digital-commerce": {
+  "digital-commerce-solutions": {
     hero: {
       breadcrumb: "Services / Digital Commerce Solutions",
       titleLines: [
@@ -146,7 +146,7 @@ export const serviceDetailBySlug = {
       },
     ],
   },
-  "creative-designs": {
+  "creative-design-and-brand-solutions": {
     hero: {
       breadcrumb: "Services / Creative Design and Brand Solutions",
       titleLines: [

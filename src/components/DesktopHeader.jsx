@@ -31,7 +31,7 @@ export default function DesktopHeader() {
   }, [])
 
   const menuItems = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "/" },
     { name: "About", href: "#" },
     { name: "Contact", href: "#" },
   ]
@@ -53,8 +53,9 @@ export default function DesktopHeader() {
       title: "Enterprise Application Development",
       description: "Develop scalable apps for complex business needs.",
       highlights: [
-        { label: "Cloud-Native Systems", href: "#" },
-        { label: "Legacy Modernization", href: "#" },
+        { label: "Custom Software Development", href: "#" },
+        { label: "Cloud Infrastructure Services", href: "#" },
+        { label: "Security and Performance Engineering", href: "#" },
       ],
       image: "/images/enterprise1.png",
       icon: (
@@ -65,8 +66,9 @@ export default function DesktopHeader() {
       title: "Intelligent Process Automation",
       description: "Automate workflows to save time and increase accuracy.",
       highlights: [
-        { label: "RPA & Orchestration", href: "#" },
-        { label: "AI Agents", href: "#" },
+        { label: "Conversational AI Solutions", href: "#" },
+        { label: "Workflow Automation Services", href: "#" },
+        { label: "AI Integration and Strategy", href: "#" },
       ],
       image: "/images/intelligent1.png",
       icon: (
@@ -77,8 +79,9 @@ export default function DesktopHeader() {
       title: "Revenue Technology Integration",
       description: "Connect revenue tools to drive growth.",
       highlights: [
-        { label: "CRM & Billing", href: "#" },
-        { label: "Attribution & Analytics", href: "#" },
+        { label: "Analytics and Tracking Implementation", href: "#" },
+        { label: "CRM and Customer Journey Optimization", href: "#" },
+        { label: "Revenue Operations Consulting", href: "#" },
       ],
       image: "/images/revenue3.png",
       icon: (
@@ -89,8 +92,9 @@ export default function DesktopHeader() {
       title: "Strategic Data Intelligence",
       description: "Turn data into clear, actionable insights.",
       highlights: [
-        { label: "Data Platforms", href: "#" },
-        { label: "ML & Forecasting", href: "#" },
+        { label: "Competitive Intelligence Automation", href: "#" },
+        { label: "Business Data Extraction", href: "#" },
+        { label: "Data Integration and Pipeline Management", href: "#" },
       ],
       image: "/images/data4.png",
       icon: (
@@ -101,8 +105,9 @@ export default function DesktopHeader() {
       title: "Creative Design and Brand Solutions",
       description: "Create designs that strengthen brand presence.",
       highlights: [
-        { label: "Brand Systems", href: "#" },
-        { label: "Product Design", href: "#" },
+        { label: "Brand Identity and Visual Design", href: "#" },
+        { label: "User Experience and Interface Design", href: "#" },
+        { label: "Creative Advertising Design", href: "#" },
       ],
       image: "/images/design2.png",
       icon: (
@@ -163,8 +168,9 @@ export default function DesktopHeader() {
                     {services.map((svc, idx) => {
                       const isActive = idx === activeIndex
                       return (
-                        <button
+                        <a
                           key={svc.title}
+                          href={`/service-details/${svc.title.toLowerCase().replace(/\s+/g, '-')}`}
                           onMouseEnter={() => setActiveIndex(idx)}
                           className={`w-full text-left rounded-xl px-4 py-3 flex items-start justify-between cursor-pointer transition-all ${isActive ? "bg-white shadow-sm" : "hover:bg-white/60"}`}
                         >
@@ -176,7 +182,7 @@ export default function DesktopHeader() {
                             </div>
                           </div>
                           <svg className={`h-5 w-5 mt-1 ${isActive ? "text-indigo-500" : "text-gray-400"}`} viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M7.22 14.78a.75.75 0 001.06 0l4.24-4.24a.75.75 0 000-1.06L8.28 5.24a.75.75 0 10-1.06 1.06L10.94 10l-3.72 3.7a.75.75 0 000 1.08z" clipRule="evenodd"/></svg>
-                        </button>
+                        </a>
                       )
                     })}
                   </div>
@@ -190,7 +196,7 @@ export default function DesktopHeader() {
                   <div className="text-xl font-semibold text-gray-900">{services[activeIndex].title}</div>
                   <div className="mt-2 space-y-2">
                     {services[activeIndex].highlights.map((h) => (
-                      <a key={h.label} href={h.href} className="flex items-center justify-between py-2 text-gray-700 hover:text-gray-900">
+                      <a key={h.label} href={`/service-details/${services[activeIndex].title.toLowerCase().replace(/\s+/g, '-')}/${h.label.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center justify-between py-2 text-gray-700 hover:text-gray-900">
                         <span>{h.label}</span>
                         <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M7.22 14.78a.75.75 0 001.06 0l4.24-4.24a.75.75 0 000-1.06L8.28 5.24a.75.75 0 10-1.06 1.06L10.94 10l-3.72 3.7a.75.75 0 000 1.08z" clipRule="evenodd"/></svg>
                       </a>
