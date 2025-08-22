@@ -5,11 +5,7 @@ import { serviceDetailBySlug } from '@/templates/ServiceDetail.config'
 export default function Page({ params }) {
   const { slug } = params
   const data = serviceDetailBySlug[slug]
-
-  if (!data) {
-    return null
-  }
-
+  if (!data) return null
   return <ServiceDetail hero={data.hero} rows={data.rows} />
 }
 
