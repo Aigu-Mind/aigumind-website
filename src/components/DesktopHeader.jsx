@@ -44,11 +44,9 @@ export default function DesktopHeader() {
         { label: "Commerce Platform Engineering", href: "#" },
         { label: "Commerce Infrastructure", href: "#" },
       ],
-      image: "/images/intelligent1.png",
+      image: "/images/servicedetail1.png",
       icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-indigo-500">
-          <path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-        </svg>
+        <Image src="/images/mega1.svg" alt="Digital Commerce Icon" width={24} height={24} className="h-6 w-6" />
       ),
     },
     {
@@ -60,9 +58,7 @@ export default function DesktopHeader() {
       ],
       image: "/images/enterprise1.png",
       icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-indigo-500">
-          <rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" strokeWidth="1.6" />
-        </svg>
+        <Image src="/images/mega2.svg" alt="Enterprise Icon" width={24} height={24} className="h-6 w-6" />
       ),
     },
     {
@@ -72,12 +68,9 @@ export default function DesktopHeader() {
         { label: "RPA & Orchestration", href: "#" },
         { label: "AI Agents", href: "#" },
       ],
-      image: "/images/intelligent2.png",
+      image: "/images/intelligent1.png",
       icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-indigo-500">
-          <circle cx="12" cy="12" r="7" stroke="currentColor" strokeWidth="1.6" />
-          <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-        </svg>
+        <Image src="/images/mega3.svg" alt="Automation Icon" width={24} height={24} className="h-6 w-6" />
       ),
     },
     {
@@ -87,11 +80,9 @@ export default function DesktopHeader() {
         { label: "CRM & Billing", href: "#" },
         { label: "Attribution & Analytics", href: "#" },
       ],
-      image: "/images/revenue1.png",
+      image: "/images/revenue3.png",
       icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-indigo-500">
-          <path d="M4 14l4-4 4 4 6-6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
+        <Image src="/images/mega4.svg" alt="Revenue Icon" width={24} height={24} className="h-6 w-6" />
       ),
     },
     {
@@ -101,11 +92,9 @@ export default function DesktopHeader() {
         { label: "Data Platforms", href: "#" },
         { label: "ML & Forecasting", href: "#" },
       ],
-      image: "/images/data1.png",
+      image: "/images/data4.png",
       icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-indigo-500">
-          <path d="M4 18h16M7 14h10M9 10h6M11 6h2" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-        </svg>
+        <Image src="/images/mega5.svg" alt="Data Icon" width={24} height={24} className="h-6 w-6" />
       ),
     },
     {
@@ -115,11 +104,9 @@ export default function DesktopHeader() {
         { label: "Brand Systems", href: "#" },
         { label: "Product Design", href: "#" },
       ],
-      image: "/images/design1.png",
+      image: "/images/design2.png",
       icon: (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-indigo-500">
-          <path d="M12 3l3 6 6 3-6 3-3 6-3-6-6-3 6-3 3-6z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
-        </svg>
+        <Image src="/images/mega6.svg" alt="Design Icon" width={24} height={24} className="h-6 w-6" />
       ),
     },
   ]
