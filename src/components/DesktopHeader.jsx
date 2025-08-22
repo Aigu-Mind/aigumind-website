@@ -166,7 +166,7 @@ export default function DesktopHeader() {
                         <button
                           key={svc.title}
                           onMouseEnter={() => setActiveIndex(idx)}
-                          className={`w-full text-left rounded-xl px-4 py-3 flex items-start justify-between transition-all ${isActive ? "bg-white shadow-sm" : "hover:bg-white/60"}`}
+                          className={`w-full text-left rounded-xl px-4 py-3 flex items-start justify-between cursor-pointer transition-all ${isActive ? "bg-white shadow-sm" : "hover:bg-white/60"}`}
                         >
                           <div className="flex items-start gap-3">
                             <span className="mt-0.5">{svc.icon}</span>
