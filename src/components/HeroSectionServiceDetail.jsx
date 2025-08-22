@@ -1,5 +1,5 @@
-import Header from "../Header.jsx"
-import Button from "../Button.jsx"
+import Header from "./Header.jsx"
+import Button from "./Button.jsx"
 
 export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], description, imageSrc, imageAlt = "" }) {
   return (

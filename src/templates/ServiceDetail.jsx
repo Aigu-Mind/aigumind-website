@@ -1,8 +1,8 @@
 import React from 'react'
 import Footer from '@/components/Footer'
-import ServiceDetailCarosal from '@/components/servicedetailsdigitalcommerce/ServiceDetailCarosal'
-import HeroSectionServiceDetail from '@/components/servicedetailsdigitalcommerce/HeroSectionServiceDetail'
-import DetailRow from '@/components/servicedetailsdigitalcommerce/DetailRow'
+import ServiceDetailCarosal from '@/components/ServiceDetailCarosal'
+import DetailRow from '@/components/DetailRow'
+import HeroSectionServiceDetail from '@/components/HeroSectionServiceDetail'
 
 export default function ServiceDetail({ hero, rows }) {
   return (
