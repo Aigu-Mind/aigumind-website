@@ -85,8 +85,7 @@ export default function Intelligent() {
             <div className="mb-3 font-[satoshi]">
               <span className="font-bold">Strategic Overview</span>
               <p className="text-gray-700 text-sm mt-1">
-                WWe develop comprehensive artificial intelligence strategies that transform business operations through intelligent automation and decision support systems. Our AI integration services identify high-impact use cases, implement scalable solutions, and establish governance frameworks that maximize ROI while managing implementation risks.
-              </p>
+                We develop comprehensive artificial intelligence strategies that transform business operations through intelligent automation and decision support systems. Our AI integration services identify high-impact use cases, implement scalable solutions, and establish governance frameworks that maximize ROI while managing implementation risks.              </p>
             </div>
             <div className="mb-3">
               <span className="font-bold">Core Capabilities</span>
@@ -97,8 +96,7 @@ export default function Intelligent() {
             <div>
               <span className="font-bold">Delivery Approach</span>
               <p className="text-gray-700 text-sm mt-1">
-                "Strategy development starts with business process analysis and AI opportunity identification. We conduct pilot implementations with success metrics, provide comprehensive change management support, and include ongoing model monitoring with performance optimization and strategic refinement sessions.
-              </p>
+                Strategy development starts with business process analysis and AI opportunity identification. We conduct pilot implementations with success metrics, provide comprehensive change management support, and include ongoing model monitoring with performance optimization and strategic refinement sessions.              </p>
             </div>
           </div>
           {/* Right Image Block */}
