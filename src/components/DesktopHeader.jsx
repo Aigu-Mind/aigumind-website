@@ -195,12 +195,21 @@ export default function DesktopHeader() {
                 <div className="col-span-5 p-6 pl-2">
                   <div className="text-xl font-semibold text-gray-900">{services[activeIndex].title}</div>
                   <div className="mt-2 space-y-2">
-                    {services[activeIndex].highlights.map((h) => (
-                      <a key={h.label} href={`/service-details/${services[activeIndex].title.toLowerCase().replace(/\s+/g, '-')}/${h.label.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center justify-between py-2 text-gray-700 hover:text-gray-900">
-                        <span>{h.label}</span>
-                        <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M7.22 14.78a.75.75 0 001.06 0l4.24-4.24a.75.75 0 000-1.06L8.28 5.24a.75.75 0 10-1.06 1.06L10.94 10l-3.72 3.7a.75.75 0 000 1.08z" clipRule="evenodd"/></svg>
-                      </a>
-                    ))}
+                    {services[activeIndex].highlights.map((h) => {
+                      const serviceSlug = services[activeIndex].title.toLowerCase().replace(/\s+/g, '-')
+                      const hashId = h.label.toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').trim()
+                      return (
+                        <a
+                          key={h.label}
+                          href={`/service-details/${serviceSlug}#${hashId}`}
+                          onClick={() => setIsOpen(false)}
+                          className="flex items-center justify-between py-2 text-gray-700 hover:text-gray-900"
+                        >
+                          <span>{h.label}</span>
+                          <svg className="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M7.22 14.78a.75.75 0 001.06 0l4.24-4.24a.75.75 0 000-1.06L8.28 5.24a.75.75 0 10-1.06 1.06L10.94 10l-3.72 3.7a.75.75 0 000 1.08z" clipRule="evenodd"/></svg>
+                        </a>
+                      )
+                    })}
                   </div>
                   <div className="mt-4 overflow-hidden rounded-xl">
                     <Image src={services[activeIndex].image} alt={services[activeIndex].title} width={520} height={320} className="w-full h-44 object-cover grayscale rounded-xl" />

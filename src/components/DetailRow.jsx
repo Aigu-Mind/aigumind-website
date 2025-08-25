@@ -1,8 +1,8 @@
 import React from "react"
 
-export default function DetailRow({ imageSrc, imageAlt = "", imageOnLeft = false, heading, blocks = [] }) {
+export default function DetailRow({ id, imageSrc, imageAlt = "", imageOnLeft = false, heading, blocks = [] }) {
   return (
-    <div className={`max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12${imageOnLeft ? " mt-16" : ""}`}>
+    <div id={id} className={`max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12${imageOnLeft ? " mt-16" : ""}`}>
       {imageOnLeft ? (
         <>
           <div className="flex justify-start items-start relative">
