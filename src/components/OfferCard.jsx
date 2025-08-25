@@ -14,24 +14,24 @@ export default function OfferCard({ title, description, features, imageSrc, isIm
         </defs>
       </svg>
       <div
-        className={`flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 py-12 md:py-20 px-4 max-w-7xl mx-auto ${
-          isImageOnLeft ? "md:flex-row-reverse" : ""
+        className={`flex flex-col md:flex-row tablet:flex-col items-center justify-between gap-8 md:gap-16 tablet:gap-8 py-12 md:py-20 tablet:py-12 px-4 max-w-7xl mx-auto ${
+          isImageOnLeft ? "md:flex-row-reverse tablet:flex-col" : ""
         }`}
       >
         {/* Image Section */}
-        <div className="w-full md:w-1/2 flex justify-center items-center p-4">
+        <div className="w-full md:w-1/2 tablet:w-full flex justify-center items-center p-4">
           <Image
             src={imageSrc || "/placeholder.svg"}
             alt={title}
             width={500}
             height={350}
-            className="object-contain w-full h-auto max-w-md md:max-w-full"
+            className="object-contain w-full h-auto max-w-md md:max-w-full tablet:max-w-sm tablet:h-64 offer-card-image"
             priority
           />
         </div>
 
         {/* Content Section */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
+        <div className="w-full md:w-1/2 tablet:w-full text-center md:text-left tablet:text-center">
           <h3 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6 leading-tight">{title}</h3>
           <p className="text-base md:text-lg text-[#6E6E6E] mb-8 leading-relaxed">{description}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-8">

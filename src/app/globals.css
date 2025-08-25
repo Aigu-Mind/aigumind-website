@@ -54,6 +54,40 @@
   }
 
   /* Custom breakpoints for specific screen sizes */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .tablet\:flex-col {
+      flex-direction: column !important;
+    }
+    .tablet\:w-full {
+      width: 100% !important;
+    }
+    .tablet\:text-center {
+      text-align: center !important;
+    }
+    .tablet\:gap-8 {
+      gap: 2rem !important;
+    }
+    .tablet\:py-12 {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+    .tablet\:max-w-sm {
+      max-width: 24rem !important;
+    }
+    .tablet\:h-64 {
+      height: 16rem !important;
+    }
+  }
+
+  /* Specific OfferCard image constraints for tablet screens */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .offer-card-image {
+      max-width: 24rem !important;
+      height: 16rem !important;
+      object-fit: contain !important;
+    }
+  }
+
   @media (min-width: 1280px) and (max-width: 1919px) {
     .laptop\:min-h-\[80vh\] {
       min-height: 80vh;
