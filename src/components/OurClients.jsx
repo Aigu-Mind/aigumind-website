@@ -63,7 +63,8 @@ export default function OurClients() {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
           What Our Clients<br />Say About Us
         </h2>
-        <div className="flex justify-center items-center gap-6 mb-12">
+        
+        <div className="hidden md:flex justify-center items-center gap-6 mb-12">
           {/* Left faded card */}
           <TestimonialCard 
             testimonial={testimonials[getTestimonialIndex(-1)]}
@@ -80,6 +81,15 @@ export default function OurClients() {
             isActive={false}
           />
         </div>
+
+        {/* Mobile: Show only active card */}
+        <div className="md:hidden flex justify-center mb-12">
+          <TestimonialCard 
+            testimonial={testimonials[active]}
+            isActive={true}
+          />
+        </div>
+
         {/* Navigation buttons group */}
         <div className="flex justify-center">
           <div className="inline-flex items-center gap-4 border-dotted border-[#4B6A88] rounded-full px-4 py-2 bg-white">
