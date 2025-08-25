@@ -14,7 +14,7 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[90vh] lg:min-h-[85vh] xl:min-h-[80vh] overflow-hidden">
       {/* Radial Gradient Background */}
       <div
         className="absolute inset-0 bg-gradient-radial from-[#122941] to-[#060D14]"
@@ -25,21 +25,21 @@ export default function HeroSection() {
       {/* Header - positioned absolutely over the gradient */}
       <Header /> 
       {/* Main content area */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 pt-24 pb-16 text-center">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-[90vh] lg:min-h-[85vh] xl:min-h-[80vh] px-4 pt-20 lg:pt-16 xl:pt-12 pb-12 lg:pb-8 xl:pb-6 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Heading */}
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-4 lg:mb-6 xl:mb-8">
             Plugging <span className="text-gradient-intelligence">Intelligence</span> Into Your Business
           </h1>
 
           {/* Description */}
-          <p className="text-[#C4C4C4] text-lg md:text-xl mb-10 max-w-2xl mx-auto text-balance">
+          <p className="text-[#C4C4C4] text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl mb-6 lg:mb-8 xl:mb-10 max-w-2xl mx-auto text-balance">
             Empower your business with AI bots, intelligent automation, and scalable digital infrastructure. From
             eCommerce to enterprise tools — we design systems that think, adapt, and grow with you.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10 lg:mb-12 xl:mb-16">
             <Button variant="primary" size="lg">
               Talk to AI Expert
             </Button>
@@ -49,8 +49,8 @@ export default function HeroSection() {
           </div>
 
           {/* Companies Section */}
-          <p className="text-[#C4C4C4] text-base mb-8">Trusted by 200+ Clients</p>
-          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 max-w-4xl mx-auto">
+          <p className="text-[#C4C4C4] text-sm sm:text-base mb-6 lg:mb-8">Trusted by 200+ Clients</p>
+          <div className="flex flex-wrap justify-center items-center gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 max-w-4xl mx-auto">
             {clientLogos.map((logo, index) => (
               <Image
                 key={index}
@@ -58,7 +58,7 @@ export default function HeroSection() {
                 alt={`Client Logo ${index + 1}`}
                 width={100}
                 height={40}
-                className="object-contain h-8 md:h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                className="object-contain h-6 sm:h-8 md:h-10 opacity-70 hover:opacity-100 transition-opacity duration-300"
               />
             ))}
           </div>
