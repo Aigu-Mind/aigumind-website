@@ -1,6 +1,8 @@
+'use client'
 import Image from "next/image"
 import Header from "./Header"
 import Button from "./Button"
+import { useEffect, useState } from "react"
 
 export default function HeroSection() {
   const clientLogos = [
@@ -12,6 +14,18 @@ export default function HeroSection() {
     "/images/c6.png",
     "/images/c7.png",
   ]
+
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % clientLogos.length)
+    }, 3000) 
+
+    return () => clearInterval(interval)
+  }, [clientLogos.length])
+
+  const extendedLogos = [...clientLogos, ...clientLogos.slice(0, 4)]
 
   return (
     <section className="relative min-h-[90vh] lg:min-h-[85vh] xl:min-h-[80vh] overflow-hidden">
@@ -50,7 +64,33 @@ export default function HeroSection() {
 
           {/* Companies Section */}
           <p className="text-[#C4C4C4] text-sm sm:text-base mb-6 lg:mb-8">Trusted by 200+ Clients</p>
-          <div className="flex flex-wrap justify-center items-center gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 max-w-4xl mx-auto">
+          
+          {/* Mobile Carousel - Hidden on larger screens */}
+          <div className="lg:hidden w-full max-w-md mx-auto mb-6">
+            <div className="relative overflow-hidden">
+              <div 
+                className="flex transition-transform duration-1000 ease-in-out"
+                style={{
+                  transform: `translateX(-${(currentIndex * 100) / 10}%)`,
+                  width: `${(extendedLogos.length / 10) * 100}%`
+                }}
+              >
+                {extendedLogos.map((logo, index) => (
+                  <div key={index} className="flex-shrink-0 w-1/4 px-1">
+                    <Image
+                      src={logo || "/placeholder.svg"}
+                      alt={`Client Logo ${(index % clientLogos.length) + 1}`}
+                      width={100}
+                      height={40}
+                      className="object-contain h-8 opacity-70 hover:opacity-100 transition-opacity duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden lg:flex flex-wrap justify-center items-center gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 max-w-4xl mx-auto">
             {clientLogos.map((logo, index) => (
               <Image
                 key={index}
