@@ -7,13 +7,33 @@ import HeroSectionServiceDetail from '@/components/HeroSectionServiceDetail'
 
 export default function ServiceDetail({ hero, rows }) {
   useEffect(() => {
+    const easeInOutQuad = (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t)
+    const smoothScrollTo = (targetY, duration = 900) => {
+      const startY = window.pageYOffset
+      const distance = targetY - startY
+      let startTime = null
+
+      const step = (currentTime) => {
+        if (startTime === null) startTime = currentTime
+        const timeElapsed = currentTime - startTime
+        const progress = Math.min(timeElapsed / duration, 1)
+        const eased = easeInOutQuad(progress)
+        window.scrollTo(0, startY + distance * eased)
+        if (timeElapsed < duration) requestAnimationFrame(step)
+      }
+      requestAnimationFrame(step)
+    }
+
     const scrollToHash = () => {
       if (typeof window === 'undefined') return
       const hash = window.location.hash?.replace('#', '')
       if (!hash) return
       const el = document.getElementById(hash)
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        const headerOffset = 80
+        const elementTop = el.getBoundingClientRect().top + window.pageYOffset
+        const targetY = Math.max(elementTop - headerOffset, 0)
+        smoothScrollTo(targetY)
       }
     }
 
