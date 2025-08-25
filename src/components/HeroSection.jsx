@@ -66,13 +66,13 @@ export default function HeroSection() {
           <p className="text-[#C4C4C4] text-sm sm:text-base mb-6 lg:mb-8">Trusted by 200+ Clients</p>
           
           {/* Mobile Carousel - Hidden on larger screens */}
-          <div className="lg:hidden w-full max-w-md mx-auto mb-6">
+          <div className="md:hidden w-full max-w-md mx-auto mb-6">
             <div className="relative overflow-hidden">
               <div 
                 className="flex transition-transform duration-1000 ease-in-out"
                 style={{
-                  transform: `translateX(-${(currentIndex * 100) / 10}%)`,
-                  width: `${(extendedLogos.length / 10) * 100}%`
+                  transform: `translateX(-${(currentIndex * 100) / 8}%)`,
+                  width: `${(extendedLogos.length / 8) * 100}%`
                 }}
               >
                 {extendedLogos.map((logo, index) => (
@@ -90,7 +90,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="hidden lg:flex flex-wrap justify-center items-center gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 max-w-4xl mx-auto">
+          {/* Desktop Grid - Hidden on mobile/tablet */}
+          <div className="hidden md:flex flex-wrap justify-center items-center gap-x-6 lg:gap-x-8 gap-y-4 lg:gap-y-6 max-w-4xl mx-auto">
             {clientLogos.map((logo, index) => (
               <Image
                 key={index}
