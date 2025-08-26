@@ -38,30 +38,30 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
           {/* <div className="right-text-style flex-1 leading-relaxed laptop:text-sm md:text-sm sm:text-xs">
             {description}
           </div> */}
-           <div className="right-text-style flex-1 leading-relaxed laptop:text-sm md:text-sm sm:text-xs">
-            <span className="block sm:hidden">
-              {shortDesc}
-              {description.length > 150 && !showMore && (
-                <button
-                  className="ml-2 text-[#4285F4] underline text-sm"
-                  onClick={() => setShowMore(true)}
-                >
-                  Load more
-                </button>
-              )}
-              {showMore && (
-                <button
-                  className="ml-2 text-[#4285F4] underline text-sm"
-                  onClick={() => setShowMore(false)}
-                >
-                  Show less
-                </button>
-              )}
-            </span>
-            <span className="hidden sm:block">
-              {description}
-            </span>
-          </div>
+                       <div className="right-text-style flex-1 leading-relaxed laptop:text-sm md:text-sm sm:text-xs" style={{ fontSize: 'clamp(12px, 3vw, 16px)' }}>
+              <span className="block sm:hidden">
+                {shortDesc}
+                {description.length > 150 && !showMore && (
+                  <button
+                    className="ml-2 text-[#4285F4] underline text-sm"
+                    onClick={() => setShowMore(true)}
+                  >
+                    Load more
+                  </button>
+                )}
+                {showMore && (
+                  <button
+                    className="ml-2 text-[#4285F4] underline text-sm"
+                    onClick={() => setShowMore(false)}
+                  >
+                    Show less
+                  </button>
+                )}
+              </span>
+              <span className="hidden sm:block">
+                {description}
+              </span>
+            </div>
         </div>
       </section>
 
