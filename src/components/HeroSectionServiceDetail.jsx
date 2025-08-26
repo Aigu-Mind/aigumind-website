@@ -18,7 +18,7 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
           }}
         />
         <Header />
-        <div className="relative z-10 max-w-7xl mx-auto pt-12 desktop:pt-32 laptop:pt-24 md:pt-28 sm:pt-16 xs:pt-20 laptop:px-12 md:px-14 px-4 flex flex-col md:flex-row gap-12 pb-8">
+        <div className="relative z-10 max-w-7xl mx-auto pt-12 desktop:pt-32 laptop:pt-24 md:pt-28 sm:pt-16 xs:pt-20 laptop:px-12 md:px-14 px-4 flex flex-col lg:flex-row gap-12 pb-8">
           <div className="flex-1">
             <div className="breadcrumb-style mb-2 mt-8 laptop:mt-6 md:mt-4 sm:mt-3 laptop:text-xl md:text-lg sm:text-base">
               {breadcrumb}
