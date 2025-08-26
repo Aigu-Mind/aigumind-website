@@ -10,7 +10,7 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
 
   return (
     <>
-      <section className="relative desktop:min-h-[85vh] laptop:min-h-[95vh] md:min-h-[110vh] sm:min-h-[70vh] overflow-visible">
+      <section className="relative xl:min-h-[75vh] desktop:min-h-[85vh] laptop:min-h-[95vh] md:min-h-[110vh] sm:min-h-[70vh] overflow-visible">
         <div
           className="absolute inset-0 bg-gradient-radial from-[#122941] to-[#060D14]"
           style={{
