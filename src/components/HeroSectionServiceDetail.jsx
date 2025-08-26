@@ -5,7 +5,6 @@ import Button from "./Button.jsx"
 export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], description, imageSrc, imageAlt = "" }) {
   const [showMore, setShowMore] = useState(false);
 
-  // Limit description to about 3 lines (~150 chars, adjust as needed)
   const shortDesc = description && description.length > 150 && !showMore
     ? description.slice(0, 150) + "..."
     : description;
@@ -46,7 +45,7 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
                   className="ml-2 text-[#4285F4] underline text-sm"
                   onClick={() => setShowMore(true)}
                 >
-                  Load more
+                  Show more
                 </button>
               )}
               {showMore && (
