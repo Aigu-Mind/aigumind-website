@@ -23,7 +23,7 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
             <div className="breadcrumb-style mb-2 mt-8 laptop:mt-6 md:mt-4 sm:mt-3 laptop:text-xl md:text-lg sm:text-base">
               {breadcrumb}
             </div>
-            <h1 className="heading-style text-white mb-6 laptop:mb-4 md:mb-3 sm:mb-2 leading-tight laptop:text-3xl md:text-2xl sm:text-xl">
+            <h1 className="heading-style text-white mb-6 laptop:mb-4 md:mb-3 sm:mb-2 leading-tight laptop:text-3xl md:text-2xl" style={{ fontSize: 'clamp(20px, 4vw, 32px)' }}>
               {titleLines.map((line, index) => (
                 <span key={index}>
                   {line}{" "}
