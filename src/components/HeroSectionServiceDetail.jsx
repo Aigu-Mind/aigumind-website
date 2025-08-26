@@ -10,7 +10,7 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
 
   return (
     <>
-      <section className="relative xl:min-h-[70vh] desktop:min-h-[80vh] laptop:min-h-[95vh] md:min-h-[100vh] sm:min-h-[70vh] overflow-hidden">
+      <section className="relative xl:min-h-[70vh] desktop:min-h-[80vh] xl:min-h-[100vh] laptop:min-h-[95vh] md:min-h-[100vh] sm:min-h-[70vh] overflow-hidden">
         <div
           className="absolute inset-0 bg-gradient-radial from-[#122941] to-[#060D14]"
           style={{
@@ -59,7 +59,7 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
         </div>
       </section>
 
-      <div className="relative -mt-12 sm:-mt-16 md:-mt-18 laptop:-mt-28 desktop:-mt-42 z-20 w-full max-w-7xl mx-auto px-4">
+      <div className="relative -mt-12 sm:-mt-16 md:-mt-18 lg:-mt-56 xl:-mt-50 2xl:-mt-64 laptop:-mt-36 desktop:-mt-56 z-20 w-full max-w-7xl mx-auto px-4">
         <img src={imageSrc} alt={imageAlt} className="w-full rounded-2xl laptop:rounded-xl md:rounded-lg sm:rounded-md" />
       </div>
     </>
