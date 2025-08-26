@@ -59,7 +59,7 @@ export default function HeroSectionServiceDetail({ breadcrumb, titleLines = [], 
         </div>
       </section>
 
-      <div className="relative desktop:-mt-42 laptop:-mt-28 md:-mt-18 sm:-mt-16 z-20 w-full max-w-7xl mx-auto px-4">
+      <div className="relative -mt-12 sm:-mt-16 md:-mt-18 laptop:-mt-28 desktop:-mt-42 z-20 w-full max-w-7xl mx-auto px-4">
         <img src={imageSrc} alt={imageAlt} className="w-full rounded-2xl laptop:rounded-xl md:rounded-lg sm:rounded-md" />
       </div>
     </>
