@@ -233,11 +233,11 @@ export default function MobileHeader() {
               </a>
             ))}
 
-            <div className="pt-4">
+            {/* <div className="pt-4">
               <Button variant="primary" size="md" className="w-full">
                 Talk to AI Expert
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       )}
