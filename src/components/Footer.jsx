@@ -8,6 +8,8 @@ export default function Footer() {
     { name: "About", href: "#" },
     { name: "Services", href: "#" },
     { name: "Contact", href: "#" },
+    { name: "Privacy Policy", href: "#" },
+    { name: "Terms of Service", href: "#" },
   ]
 
   return (
