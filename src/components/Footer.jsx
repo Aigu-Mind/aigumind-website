@@ -1,22 +1,21 @@
-
-
+"use client"
 import Image from "next/image";
 
 export default function Footer() {
     const navItems = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
     { name: "Services", href: "#" },
     { name: "Contact", href: "#" },
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms of Service", href: "/terms-of-service" },
   ]
 
   return (
     <footer className="bg-white pt-8 pb-4">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* Logo and navigation */}
-        <div className="w-full flex items-center justify-between mb-2 px-4">
+        <div className="w-full flex flex-col md:flex-row items-start md:items-center justify-between mb-2 px-4">
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Image
@@ -28,6 +27,25 @@ export default function Footer() {
               priority
             />
 
+          </div>
+          {/* Mobile navigation grid (2 rows x 3 items) */}
+          <div className="md:hidden w-full ml-auto">
+            <div className="grid grid-cols-2 gap-3 mt-4 text-center">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={() => {
+                    if (item.href === "/about") {
+                      window.location.href = "/about"
+                    }
+                  }}
+                  className="text-black hover:text-gray-400 transition-colors duration-300 font-medium"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
           </div>
            {/* Navigation Menu */}
         <div className="hidden md:flex items-center space-x-8">
@@ -43,7 +61,7 @@ export default function Footer() {
           ))}
         </div>
           {/* Social icons */}
-          <div className="flex gap-4 text-[#8B8DF7]">
+          <div className="flex gap-4 text-[#8B8DF7] mt-4 md:mt-0">
             <a href="#">
               <i className="fab fa-facebook-f"></i>
             </a>
