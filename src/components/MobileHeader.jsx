@@ -125,7 +125,7 @@ export default function MobileHeader() {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden mt-4 pb-4 border-t border-white/10">
+        <div className="md:hidden mt-4 pb-4 border-t border-white/10 min-h-screen">
           <div className="flex flex-col space-y-4 pt-4">
             {/* Services dropdown trigger */}
             <div
