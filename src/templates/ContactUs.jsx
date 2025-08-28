@@ -97,7 +97,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Email Us</h3>
-                    <p className="text-gray-600">hello@aigumind.com</p>
+                    <a href="mailto:information@aigumind.com" className="text-gray-600">information@aigumind.com</a>
                   </div>
                 </div>
 
@@ -109,7 +109,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Call Us</h3>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                    <a href="tel:+92 3390098541" className="text-gray-600">+92 3390098541</a>
                   </div>
                 </div>
 
@@ -122,7 +122,7 @@ export default function ContactUs() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Visit Us</h3>
-                    <p className="text-gray-600">123 Innovation Drive<br />Tech City, TC 12345</p>
+                    <p className="text-gray-600">C-158/1<br />Block-9,Gulshan-e-iqbal, Karachi</p>
                   </div>
                 </div>
               </div>
