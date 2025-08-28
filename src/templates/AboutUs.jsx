@@ -6,15 +6,24 @@ export default function AboutPage() {
   return (
     <div className="bg-white text-black">
       <Header />
+      <section className="relative !bg-[#F3F7FF63] pt-20 pb-16 md:pt-32 md:pb-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              <span className="text-3xl md:text-5xl font-bold mb-4 text-gradient-intelligence">About Aigumind</span>
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+              We help companies build intelligent, scalable products by combining design, engineering, and data to deliver outcomes that matter.Ready to transform your business with AI-powered solutions? Let's discuss how we can help you achieve your goals.
+            </p>
+            <div className="w-20 h-1 bg-gradient-to-r from-[#BC91F6] to-[#5087ED] mx-auto rounded-full"></div>
+          </div>
+        </div>
+      </section>
+
       <main className="max-w-6xl mx-auto px-4 md:px-6 py-36 md:py-36">
         {/* Hero */}
-        <section className="text-center mb-16 md:mb-24">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">About Aigumind</h1>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            We help companies build intelligent, scalable products by combining design, engineering,
-            and data to deliver outcomes that matter.
-          </p>
-        </section>
+        
+        
 
         {/* Values / Stats */}
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-24">

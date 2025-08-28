@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import DesktopHeader from "./DesktopHeader"
 import MobileHeader from "./MobileHeader"
 import AboutPage from "@/app/about/page"
+import ContactUs from "@/app/contact-us/page"
 
 export default function Header() {
   const [isMobile, setIsMobile] = useState(false)
@@ -21,7 +22,7 @@ export default function Header() {
     return () => window.removeEventListener("resize", checkScreenSize)
   }, [])
 
-  const isLegalPage = pathname === "/privacy-policy" || pathname === "/terms-of-service" || pathname === "/about"
+  const isLegalPage = pathname === "/privacy-policy" || pathname === "/terms-of-service" || pathname === "/about" || pathname === "/contact-us"
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50">

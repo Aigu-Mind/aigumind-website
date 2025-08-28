@@ -33,7 +33,7 @@ export default function DesktopHeader() {
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "#" },
+    { name: "Contact", href: "/contact-us" },
   ]
 
   const services = [
