@@ -5,6 +5,8 @@ export const metadata = {
   description: "Your AI-powered platform for intelligent solutions",
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
